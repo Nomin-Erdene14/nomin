@@ -310,6 +310,13 @@ a{color:#1C1B19}a:hover{color:#000}
 .iph .scr img{border-radius:0}
 .iph .scr img.pan{inset:0;width:100%;height:100%}
 .bar{display:none}
+.winview{position:relative;aspect-ratio:16/10;overflow:hidden;border-radius:12px;background:#EDEDF0}
+@keyframes pan2{0%{object-position:center top}100%{object-position:center bottom}}
+.pan{animation:pan2 70s linear infinite alternate !important;animation-play-state:paused !important}
+.pan.slow,.pgrid .pan{animation-duration:100s !important}
+.winview:hover .pan,.scr:hover .pan,.stage:hover .pan{animation-play-state:running !important}
+.winview,.stage,.pgrid .iph{cursor:ns-resize}
+@media (hover:none){.pan.inview{animation-play-state:running !important}}
 
 /* phones: no frame, just the screen */
 .iph{padding:0;background:transparent;border-radius:11%/5%;box-shadow:0 18px 40px rgba(30,30,45,.28)}
@@ -432,8 +439,8 @@ a{color:#1C1B19}a:hover{color:#000}
 <p class="hand" style="margin: 0; font-size: 24px">about me</p>
 <h2 class="pix" style="margin: 4px 0 24px; font-size: clamp(64px, 9vw, 120px)">ABOUT</h2>
 <span class="tag" style="--r: -2deg; background: #F9D86B; margin-bottom: 16px">Main bio</span>
-<p class="hand" style="margin: 0 0 18px; font-size: clamp(24px, 2.6vw, 30px); line-height: 1.3">I'm a UX designer at Golomt Bank who gets a little too excited about making complicated money things feel simple — for kids, tellers and international investors alike.</p>
-<p style="margin: 0 0 30px; font-size: 17px; line-height: 1.7; color: #4A4740; max-width: 620px">For 3 years I've designed websites, mini apps and internal tools across Golomt's digital products, often wearing a business analyst hat too. [Add one line about how you work or what you do outside of design.]</p>
+<p class="hand" style="margin: 0 0 18px; font-size: clamp(24px, 2.6vw, 30px); line-height: 1.3">I'm a UX designer with 3 years of experience. I love learning and I'm curious to try new things.</p>
+<p style="margin: 0 0 30px; font-size: 17px; line-height: 1.7; color: #4A4740; max-width: 620px">On my most recent project I also took on the business analyst role, so I design with both the user and the business in mind.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
 <span class="skill" style="background: #F9D86B">Interaction Design</span>
 <span class="skill" style="background: #A8E0C8">Prototyping</span>
@@ -470,9 +477,9 @@ a{color:#1C1B19}a:hover{color:#000}
 <div class="inner vl" aria-hidden="true">
 <div class="dev d-lap-ph"><div class="lap"><div class="lid"><div class="scr">
 
-<img class="shot shot1" src="/assets/insights-hero.webp" alt=""><img class="shot shot2" src="/assets/insights-podcast.webp" alt=""><img class="shot shot3" src="/assets/insights-report.webp" alt="">
+<img class="shot shot1" src="/assets/ins2-home.webp" alt=""><img class="shot shot2" src="/assets/ins2-podcast.webp" alt=""><img class="shot shot3" src="/assets/ins2-research.webp" alt="">
 </div></div><div class="base"></div><div class="neck"></div><div class="foot"></div></div></div>
-<div class="phs"><div class="iph ph2"><div class="scr"><img src="/assets/insights-m2.webp" alt=""></div></div><div class="iph ph1"><div class="scr"><img src="/assets/insights-m1.webp" alt=""></div></div></div>
+<div class="phs"><div class="iph ph2"><div class="scr"><img src="/assets/ins2-m-list.webp" alt=""></div></div><div class="iph ph1"><div class="scr"><img src="/assets/ins2-m-home.webp" alt=""></div></div></div>
 
 </div>
 <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
@@ -493,11 +500,11 @@ a{color:#1C1B19}a:hover{color:#000}
 <span class="tape tl pink"></span>
 <div class="frame">
 <div class="inner vl" aria-hidden="true">
-<div class="dev d-lap-ph"><div class="lap"><div class="lid"><div class="scr">
+<div class="dev d-lap"><div class="lap"><div class="lid"><div class="scr">
 
-<img class="shot shot1" src="/assets/spj-hero.webp" alt=""><img class="shot shot2" src="/assets/spj-chat.webp" alt=""><img class="shot shot3" src="/assets/spj-friends.webp" alt="">
+<img class="shot shot1" src="/assets/spj3-desk.webp" alt=""><img class="shot shot2" src="/assets/spj3-themes.webp" alt=""><img class="shot shot3" src="/assets/spj3-chat.webp" alt="">
 </div></div><div class="base"></div><div class="neck"></div><div class="foot"></div></div></div>
-<div class="phs"><div class="iph ph2"><div class="scr"><img src="/assets/spj-m-send.webp" alt=""></div></div><div class="iph ph1"><div class="scr"><img src="/assets/spj-m-cards.webp" alt=""></div></div></div>
+
 
 </div>
 <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
@@ -545,7 +552,7 @@ a{color:#1C1B19}a:hover{color:#000}
 <div class="inner vt" aria-hidden="true">
 
 
-<div class="trio"><div class="iph t1"><div class="scr"><img src="/assets/cup-profile.webp" alt=""></div></div><div class="iph t2"><div class="scr"><img src="/assets/cup-home.webp" alt=""></div></div><div class="iph t3"><div class="scr"><img src="/assets/cup-result.webp" alt=""></div></div></div>
+<div class="trio"><div class="iph t1"><div class="scr"><img src="/assets/cup2-leader.webp" alt=""></div></div><div class="iph t2"><div class="scr"><img src="/assets/cup2-home.webp" alt=""></div></div><div class="iph t3"><div class="scr"><img src="/assets/cup2-profile.webp" alt=""></div></div></div>
 </div>
 
 <span class="go"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C1B19" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></span>
@@ -567,7 +574,7 @@ a{color:#1C1B19}a:hover{color:#000}
 <div class="inner vv" aria-hidden="true">
 
 
-<div class="trio"><div class="iph t1"><div class="scr"><img src="/assets/vb-schedule.webp" alt=""></div></div><div class="iph t2"><div class="scr"><img src="/assets/vb-home.webp" alt=""></div></div><div class="iph t3"><div class="scr"><img src="/assets/vb-team.webp" alt=""></div></div></div>
+<div class="trio"><div class="iph t1"><div class="scr"><img src="/assets/vb2-schedule.webp" alt=""></div></div><div class="iph t2"><div class="scr"><img src="/assets/vb2-home.webp" alt=""></div></div><div class="iph t3"><div class="scr"><img src="/assets/vb2-team.webp" alt=""></div></div></div>
 </div>
 
 <span class="go"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C1B19" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></span>
@@ -588,7 +595,7 @@ a{color:#1C1B19}a:hover{color:#000}
 <div class="frame">
 <div class="inner vl" aria-hidden="true">
 <div class="dev d-mon"><div class="mon"><div class="lid"><div class="scr">
-<img class="pan" src="/assets/c360.webp" alt="">
+<img class="pan" src="/assets/c360-2.webp" alt="">
 
 </div></div><div class="base"></div><div class="neck"></div><div class="foot"></div></div></div>
 
@@ -630,12 +637,12 @@ a{color:#1C1B19}a:hover{color:#000}
 <section id="contact" style="max-width: 1180px; margin: 0 auto; padding: 60px 16px 40px; text-align: center; position: relative">
 <div class="polaroid hide-sm" style="--r: -7deg; position: absolute; left: 2%; top: 120px; width: 190px; padding: 9px 9px 34px">
 <span class="tape tc"></span>
-<img src="/assets/spj-hero.webp" alt="" style="display: block; width: 100%; aspect-ratio: 1; object-fit: cover; object-position: left top">
+<img src="/assets/spj3-desk.webp" alt="" style="display: block; width: 100%; aspect-ratio: 1; object-fit: cover; object-position: left top">
 <span class="hand" style="position: absolute; left: 0; right: 0; bottom: 6px; font-size: 18px">SocialPay Junior</span>
 </div>
 <div class="polaroid hide-sm" style="--r: 6deg; position: absolute; right: 2%; top: 170px; width: 170px; padding: 9px 9px 34px">
 <span class="tape tc pink"></span>
-<img src="/assets/cup-home.webp" alt="" style="display: block; width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center top">
+<img src="/assets/cup2-home.webp" alt="" style="display: block; width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center top">
 <span class="hand" style="position: absolute; left: 0; right: 0; bottom: 6px; font-size: 18px">Junior Cup</span>
 </div>
 
@@ -664,5 +671,6 @@ document.querySelectorAll('[data-f]').forEach(function(b){b.addEventListener('cl
  var n=0;document.querySelectorAll('.card[data-cat]').forEach(function(c){var show=f==='all'||c.getAttribute('data-cat').split(' ').indexOf(f)>-1;c.style.display=show?'':'none';if(show){c.classList.remove('lean-l','lean-r');c.classList.add(n%2?'lean-r':'lean-l');c.style.animation='none';c.offsetHeight;c.style.animation='';n++;}});
 });});
 </script>
+<script>(function(){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('inview');io.unobserve(e.target);}});},{threshold:0.12});document.querySelectorAll('.pan').forEach(function(el){io.observe(el);});})();</script>
 </body>
 </html>

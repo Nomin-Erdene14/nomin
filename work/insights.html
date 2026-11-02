@@ -7,7 +7,7 @@
 <meta name="description" content="Merged two confusing legacy sites into one bilingual platform, so the CEO can now share Golomt Bank’s financial reports and news with international partners.">
 <meta property="og:title" content="Golomt Bank Insights — Nomin-Erdene">
 <meta property="og:description" content="Merged two confusing legacy sites into one bilingual platform, so the CEO can now share Golomt Bank’s financial reports and news with international partners.">
-<meta property="og:image" content="/assets/insights-hero.webp">
+<meta property="og:image" content="/assets/ins2-home.webp">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23F5C842'/%3E%3Ctext x='16' y='23' font-family='monospace' font-weight='700' font-size='18' text-anchor='middle' fill='%231C1B19'%3EN%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -310,6 +310,13 @@ a{color:#1C1B19}a:hover{color:#000}
 .iph .scr img{border-radius:0}
 .iph .scr img.pan{inset:0;width:100%;height:100%}
 .bar{display:none}
+.winview{position:relative;aspect-ratio:16/10;overflow:hidden;border-radius:12px;background:#EDEDF0}
+@keyframes pan2{0%{object-position:center top}100%{object-position:center bottom}}
+.pan{animation:pan2 70s linear infinite alternate !important;animation-play-state:paused !important}
+.pan.slow,.pgrid .pan{animation-duration:100s !important}
+.winview:hover .pan,.scr:hover .pan,.stage:hover .pan{animation-play-state:running !important}
+.winview,.stage,.pgrid .iph{cursor:ns-resize}
+@media (hover:none){.pan.inview{animation-play-state:running !important}}
 
 /* phones: no frame, just the screen */
 .iph{padding:0;background:transparent;border-radius:11%/5%;box-shadow:0 18px 40px rgba(30,30,45,.28)}
@@ -378,8 +385,8 @@ a{color:#1C1B19}a:hover{color:#000}
 <section style="max-width: 1280px; margin: 0 auto; padding: 10px 16px 30px">
 <div class="stage">
 
-<div class="stage-dev with-ph "><div class="lap"><div class="lid"><div class="scr"><img class="pan" src="/assets/insights-hero.webp" alt="Home page"></div></div><div class="base"></div><div class="neck"></div><div class="foot"></div></div></div>
-<div class="stage-ph" aria-hidden="true"><div class="iph s2"><div class="scr"><img src="/assets/insights-m2.webp" alt=""></div></div><div class="iph s1"><div class="scr"><img src="/assets/insights-m1.webp" alt=""></div></div></div>
+<div class="stage-dev with-ph "><div class="lap"><div class="lid"><div class="scr"><img class="pan" src="/assets/ins2-home.webp" alt="Home page"></div></div><div class="base"></div><div class="neck"></div><div class="foot"></div></div></div>
+<div class="stage-ph" aria-hidden="true"><div class="iph s2"><div class="scr"><img src="/assets/ins2-m-list.webp" alt=""></div></div><div class="iph s1"><div class="scr"><img src="/assets/ins2-m-home.webp" alt=""></div></div></div>
 
 
 </div>
@@ -401,18 +408,18 @@ a{color:#1C1B19}a:hover{color:#000}
 <div style="display: flex; flex-direction: column; gap: 72px">
 
 <figure style="margin: 0">
-<div class="win" style="--r: -0.6deg"><div class="bar"><i></i><i></i><i></i><a class="url" href="https://insights.golomtbank.com/" target="_blank" rel="noopener" style="text-decoration: none">insights.golomtbank.com ↗</a></div><img src="/assets/insights-hero.webp" alt="Home page" style="display: block; width: 100%"></div>
+<div class="win" style="--r: -0.6deg"><div class="bar"><i></i><i></i><i></i><a class="url" href="https://insights.golomtbank.com/" target="_blank" rel="noopener" style="text-decoration: none">insights.golomtbank.com ↗</a></div><div class="winview"><img class="pan slow" src="/assets/ins2-home.webp" alt="Home page"></div></div>
 <figcaption class="cap">Home page</figcaption>
 </figure>
 
 <figure style="margin: 0">
-<div class="win" style="--r: 0.6deg"><div class="bar"><i></i><i></i><i></i><a class="url" href="https://insights.golomtbank.com/" target="_blank" rel="noopener" style="text-decoration: none">insights.golomtbank.com ↗</a></div><img src="/assets/insights-podcast.webp" alt="Podcast &amp; research reports" style="display: block; width: 100%"></div>
-<figcaption class="cap">Podcast &amp; research reports</figcaption>
+<div class="win" style="--r: 0.6deg"><div class="bar"><i></i><i></i><i></i><a class="url" href="https://insights.golomtbank.com/" target="_blank" rel="noopener" style="text-decoration: none">insights.golomtbank.com ↗</a></div><div class="winview"><img class="pan slow" src="/assets/ins2-podcast.webp" alt="Podcast"></div></div>
+<figcaption class="cap">Podcast</figcaption>
 </figure>
 
 <figure style="margin: 0">
-<div class="win" style="--r: -0.6deg"><div class="bar"><i></i><i></i><i></i><a class="url" href="https://insights.golomtbank.com/" target="_blank" rel="noopener" style="text-decoration: none">insights.golomtbank.com ↗</a></div><img src="/assets/insights-report.webp" alt="Report page with language downloads" style="display: block; width: 100%"></div>
-<figcaption class="cap">Report page with language downloads</figcaption>
+<div class="win" style="--r: -0.6deg"><div class="bar"><i></i><i></i><i></i><a class="url" href="https://insights.golomtbank.com/" target="_blank" rel="noopener" style="text-decoration: none">insights.golomtbank.com ↗</a></div><div class="winview"><img class="pan slow" src="/assets/ins2-research.webp" alt="Articles — International economy"></div></div>
+<figcaption class="cap">Articles — International economy</figcaption>
 </figure>
 
 </div>
@@ -425,9 +432,11 @@ a{color:#1C1B19}a:hover{color:#000}
 <h2 class="pix" style="margin: 4px 0 48px; font-size: clamp(56px, 8vw, 104px)">MOBILE SCREENS</h2>
 <div class="pgrid">
 
-<figure style="margin: 0"><div class="iph"><div class="scr"><img class="pan" src="/assets/insights-m1.webp" alt="Financial education"></div></div><figcaption class="cap">Financial education</figcaption></figure>
+<figure style="margin: 0"><div class="iph"><div class="scr"><img class="pan" src="/assets/ins2-m-home.webp" alt="Home"></div></div><figcaption class="cap">Home</figcaption></figure>
 
-<figure style="margin: 0"><div class="iph"><div class="scr"><img class="pan" src="/assets/insights-m2.webp" alt="Quarterly reports"></div></div><figcaption class="cap">Quarterly reports</figcaption></figure>
+<figure style="margin: 0"><div class="iph"><div class="scr"><img class="pan" src="/assets/ins2-m-list.webp" alt="Financial knowledge"></div></div><figcaption class="cap">Financial knowledge</figcaption></figure>
+
+<figure style="margin: 0"><div class="iph"><div class="scr"><img class="pan" src="/assets/ins2-m-article.webp" alt="Article"></div></div><figcaption class="cap">Article</figcaption></figure>
 
 </div>
 </section>
@@ -446,12 +455,12 @@ a{color:#1C1B19}a:hover{color:#000}
 <section id="contact" style="max-width: 1180px; margin: 0 auto; padding: 60px 16px 40px; text-align: center; position: relative">
 <div class="polaroid hide-sm" style="--r: -7deg; position: absolute; left: 2%; top: 120px; width: 190px; padding: 9px 9px 34px">
 <span class="tape tc"></span>
-<img src="/assets/spj-hero.webp" alt="" style="display: block; width: 100%; aspect-ratio: 1; object-fit: cover; object-position: left top">
+<img src="/assets/spj3-desk.webp" alt="" style="display: block; width: 100%; aspect-ratio: 1; object-fit: cover; object-position: left top">
 <span class="hand" style="position: absolute; left: 0; right: 0; bottom: 6px; font-size: 18px">SocialPay Junior</span>
 </div>
 <div class="polaroid hide-sm" style="--r: 6deg; position: absolute; right: 2%; top: 170px; width: 170px; padding: 9px 9px 34px">
 <span class="tape tc pink"></span>
-<img src="/assets/cup-home.webp" alt="" style="display: block; width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center top">
+<img src="/assets/cup2-home.webp" alt="" style="display: block; width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center top">
 <span class="hand" style="position: absolute; left: 0; right: 0; bottom: 6px; font-size: 18px">Junior Cup</span>
 </div>
 
@@ -474,5 +483,6 @@ a{color:#1C1B19}a:hover{color:#000}
 </div>
 
 
+<script>(function(){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('inview');io.unobserve(e.target);}});},{threshold:0.12});document.querySelectorAll('.pan').forEach(function(el){io.observe(el);});})();</script>
 </body>
 </html>
